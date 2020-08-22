@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+   <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.portfolio1.css"/>
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <title>Open Space:Portfolio Project</title>
+</head>
+
+<body>
+
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                
+                   <!--MODAL FOR NEW USER--> 
+      
+                    <div id="newUser" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">Welcome!</h4> 
+                                  <br>
+                              </div>
+                              <div>
+                                  <p class="modal-subtitle">We Are Excited to Have You Join Us! Please Complete the Below Form:</p>
+                              </div>
+                              <div class="modal-body">
+                                  <label class="sr-only" for="loginFN">First Name</label>
+                                  <input type="text" class="form-control form-control-sm" id="loginFN" placeholder="First Name"/>
+                              </div>
+                              <div class="modal-body">
+                                  <label class="sr-only" for="loginLN">Last Name</label>
+                                  <input type="text" class="form-control form-control-sm" id="loginLN" placeholder="Last Name"/>
+                              </div>
+                              <div class="modal-body">
+                                  <label class="sr-only" for="loginEmail">Email address</label>
+                                  <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Email Address"/>
+                              </div>
+                              <div class="modal-body">
+                                  <label class="sr-only" for="loginPassword">Create a Password</label>
+                                  <input type="password" class="form-control form-control-sm" id="loginEmail" placeholder="Password"/>
+                              </div>
+                              
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary btn-sm ml-1" data-dismiss="modal">Close</button>
+                                  <button type="submit"class="btn btn-primary btn-sm ml-1">Submit</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+ 
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <img src="img_portfolio/logo1.png" class="logo" />
+                 </div>       
+            <div class="column">
+                <h1>Open Space</h1>
+                <h2>Offering Offices, Meeting Rooms, and Community</h2>
+        </div> 
+             
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top"> 
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#cMNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="cMNavbar">
+                <ol class="navbar-nav">
+                    <li class="nav-item active"> <a class="nav-link" href="home.portfolio1.html">Home</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="membership.portfolio1.html">Membership</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="location.portfolio1.html">Locations</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Contact Us</a></li>
+
+                </ol>
+                
+            </div>
+            <button type="button" class="btn btn-info getStarted" data-toggle="modal" data-target="#newUser">Create An Account</button>
+        </div>
+    </nav>
+
+    <br>
+<div class="container">
+    <div class="row row-content align-items-center">
+        <div class="col-sm-4">
+            <h5>Headquarters</h5>
+            <address>
+                800 Brown Road<br />
+                Baltimore, WA 21230<br />
+            </address>
+        </div>
+        <div class="col">
+            <a role="button" class="btn btn-link" href="tel: +3010000000"><i class="fa fa-phone"></i> 1-000-111-2233</a><br>
+            <a role="button" class="btn btn-link" href="mailto:openspace@oc.org"><i class="fa fa-envelope-o"></i> openspace@oc.org</a>
+        </div>
+    </div>
+
+    <div class="row row-content">
+        <div class="col-12">
+            <h2>Contact Us Below for More Information:</h2>
+            <hr />
+        </div>
+        <div class="col-md-10">
+           <form>
+               <div class="form-group row">
+                    <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name"/>
+                    </div>
+                </div>
+
+            <div class="form-group row">
+                <label for="lastName" class="col-md-2 col-form-label">Last Name </label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name"/>
+                </div>  
+            </div>
+
+            <div class="form-group row">
+              <label for="telephone" class="col-md-2 col-form-label">Contact Tel: </label>
+              <div class="col-md-10">
+               <input type="tel" id="telephone" class="form-control" name="telephone" placeholder="Telephone Number"/>
+               </div>
+            </div>
+
+            <div class="form-group row">
+               <label for="email"class="col-md-2 col-form-label">Email </label>
+               <div class="col-md-10">
+                <input type="email" id="email" class="form-control" name="email" placeholder="Email"/>
+                </div>
+            </div>
+
+            <div class="form-group row">
+               <label for="feedback" class="col-md-2 col-form-label">Send Us Comments/Questions Below</label>
+               <div class="col-md-10">
+
+                     <textarea name="feedback" class="form-control" id="feedback" rows="4"> </textarea>
+                </div>
+            </div>
+                <div class="form-group row">
+                    <div class="col-offset-md-2 col-md-10">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+                
+            </div>
+            </form>
+        </div>
+   </div>
+
+</div>
+
+   
+      
+     <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 py-5">
+              <div class="mb-5 flex-center">
+      
+                <!-- Facebook -->
+                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                <!-- Twitter -->
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <!-- Youtube-->
+                <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                <!--Instagram-->
+                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                <!--Pinterest-->
+              </div>
+            </div>
+      
+        </div>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <a href="#"> OpenSpace.com</a>
+        </div>
+    
+        <div class="col-sm-4 text-center">
+            
+            <i class="fa fa-email fa-lg text-primary"></i><OpenSpace@oc class="org"></OpenSpace@oc>
+    </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
+    
+ <!-- Popper script allows for "tooltips to show" text that hovers over certain items. Check the Reserve a Campsite button as an example -->
+ <!-- build:js js/main.js -->
+ <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+ <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+ <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+ 
+
+ <!-- endbuild -->
+
+
+ 
+ 
+
+</body>
+
+</html>
